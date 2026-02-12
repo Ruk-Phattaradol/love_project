@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Mali", sans-serif;
+
+  /* Animation พื้นหลังขยับได้แบบเนียนๆ */
+  @keyframes gradient-xy {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  --animate-gradient: gradient-xy 15s ease infinite;
+}
+
+body {
+  font-family: "Mali", sans-serif;
+  background-color: #0f172a;
+  /* พื้นหลังเข้มขึ้นนิดนึงเพื่อให้รูปเด่น */
+  color: white;
+  overscroll-behavior: none;
+}
+
+/* ซ่อน Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* สร้าง Effect หน้าจอทีละแผ่น */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100dvh;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+}
