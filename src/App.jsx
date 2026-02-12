@@ -92,7 +92,6 @@ const STORY = [
         { type: 'img', src: img14 },
         { type: 'img', src: img15 },
         { type: 'video', src: video3 }, // เอาคลิป 3.mp4 มาแทรกตรงกลางให้เด่นๆ
-        { type: 'img', src: img16 },
         { type: 'img', src: img17 },
         { type: 'img', src: img18 },
         { type: 'img', src: img19 },
@@ -101,7 +100,7 @@ const STORY = [
   {
     id: 8,
     type: 'image',
-    src: img1, 
+    src: img16, 
     title: "Happy Anniversary",
     text: "รักนะครับ อยู่บ่นพี่ไปนานๆ นะ จุ๊บๆ 😘"
   }
